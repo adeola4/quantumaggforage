@@ -268,6 +268,7 @@ h3 {
   font-size: 1.05rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .image-band {
@@ -402,19 +403,28 @@ h3 {
 }
 
 .process-grid {
-  grid-template-columns: minmax(0, 1.16fr) minmax(420px, 0.84fr);
-  align-items: start;
-  padding: clamp(7rem, 9vw, 10rem) 5vw clamp(5rem, 7vw, 8rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(6rem, 10vw, 10rem) 6vw;
+  width: min(100%, 900px);
+  margin: 0 auto;
+  grid-template-columns: unset;
 }
 
 .process-heading {
   width: min(100%, 720px);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .process-body {
-  align-self: start;
+  align-self: center;
   width: min(100%, 560px);
-  margin-top: clamp(3.25rem, 4.7vw, 5.8rem);
+  margin: clamp(3.25rem, 4.7vw, 5.8rem) auto 0;
+  text-align: center;
 }
 
 .process .eyebrow,
@@ -432,6 +442,7 @@ h3 {
   letter-spacing: 0.02em;
   line-height: calc(1.2em * (1 + (1 - 1.6) / 25));
   text-transform: none;
+  text-align: center;
 }
 
 .process h2,
@@ -439,7 +450,7 @@ h3 {
 .creators h2,
 .team h2 {
   max-width: none;
-  margin: 2rem 0;
+  margin: 2rem auto;
   color: var(--cream);
   font-family: "new-spirit-condensed", serif;
   font-style: normal;
@@ -447,6 +458,7 @@ h3 {
   letter-spacing: 0.02em;
   line-height: calc(1.2em * (1 + (1 - 4) / 25));
   text-transform: none;
+  text-align: center;
 }
 
 .section-body {
@@ -826,7 +838,7 @@ h3 {
   gap: 8vw;
   max-width: 1500px;
   min-height: 440px;
-  margin: 0;
+  margin: 0 auto;
   padding: 9vw 5vw;
 }
 
@@ -940,6 +952,9 @@ h3 {
   .process-body {
     width: min(100%, 680px);
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .get-involved-copy {
@@ -1513,6 +1528,9 @@ h3 {
 
 .map-section {
   padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .map-wrapper {
