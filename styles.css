@@ -1160,6 +1160,7 @@ h3 {
 .form-radio-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -1192,7 +1193,7 @@ h3 {
 }
 
 .submit-btn {
-  align-self: flex-start;
+  align-self: center;
   padding: 1rem 2.5rem;
   background: var(--gold);
   color: var(--black);
@@ -1243,7 +1244,8 @@ h3 {
    Center-Aligned Sections ("Life begins below" & "You need fungi...")
    ========================================================================== */
 #immerseyourself .immersive-grid,
-#getinvolved .get-involved-grid {
+#getinvolved .get-involved-grid,
+#contact .contact-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1255,11 +1257,21 @@ h3 {
 }
 
 #immerseyourself .immersive-copy,
-#getinvolved .get-involved-copy {
+#getinvolved .get-involved-copy,
+#contact .contact-heading {
   grid-column: auto;
   margin: 0 auto;
   text-align: center;
   width: min(100%, 820px);
+}
+
+#contact .contact-form {
+  width: min(100%, 640px);
+  margin: 0 auto;
+}
+
+#contact .contact-intro {
+  margin: 0 auto;
 }
 
 #immerseyourself .eyebrow,
